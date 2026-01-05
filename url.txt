@@ -1,1 +1,1 @@
-di isi apa maksudnya ? dashboard nya di deploy kah ? atau gimana izin 
+https://nizham31-bike-sharing-dataset-analisi-dashboarddashboard-a4qfgr.streamlit.app/
