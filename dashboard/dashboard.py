@@ -8,9 +8,13 @@ sns.set(style='dark')
 # HELPER FUNCTIONS 
 @st.cache_data
 def load_data():
-    df_Day = pd.read_csv('day.csv')
-    df_Hour = pd.read_csv('hour.csv')
-
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    day_csv_path = os.path.join(current_dir, 'day.csv')
+    hour_csv_path = os.path.join(current_dir, 'hour.csv')
+    
+    df_Day = pd.read_csv(day_csv_path)
+    df_Hour = pd.read_csv(hour_csv_path)
+    
     # --- RENAME COLUMNS ---
     rename_dict = {
         'dteday':'date', 'yr':'year', 'mnth':'month', 'hr':'hour',
